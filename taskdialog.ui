@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TaskDialog</class>
+ <widget class="QDialog" name="TaskDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>349</width>
+    <height>323</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Input new task</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe UI&quot;;
+background-color: rgb(0, 0, 0);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QPlainTextEdit" name="plnTask">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe UI&quot;;
+</string>
+     </property>
+     <property name="centerOnScroll">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QCheckBox" name="chkHasTime">
+       <property name="styleSheet">
+        <string>background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe UI&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Set Date/Time for the task:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateTimeEdit" name="dateTimeEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 0, 0);
+font: 14pt &quot;Segoe UI&quot;;
+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btnOk">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe UI&quot;;
+background-color: qlineargradient(spread:pad, x1:0.882157, y1:0.142, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+       </property>
+       <property name="text">
+        <string>&amp;Ok</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnCancel">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe UI&quot;;
+background-color: qlineargradient(spread:pad, x1:0.882157, y1:0.142, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+       </property>
+       <property name="text">
+        <string>&amp;Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
